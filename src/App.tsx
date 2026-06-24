@@ -10,6 +10,15 @@ import NotFound from "./pages/NotFound.tsx";
 
 const Blog = lazy(() => import("./pages/Blog.tsx"));
 const BlogPost = lazy(() => import("./pages/BlogPost.tsx"));
+const Cricket = lazy(() => import("./pages/Cricket.tsx"));
+const FantasyCricket = lazy(() => import("./pages/FantasyCricket.tsx"));
+const Casino = lazy(() => import("./pages/Casino.tsx"));
+const LiveCard = lazy(() => import("./pages/LiveCard.tsx"));
+const SlotGames = lazy(() => import("./pages/SlotGames.tsx"));
+const CrashGames = lazy(() => import("./pages/CrashGames.tsx"));
+const AboutUs = lazy(() => import("./pages/AboutUs.tsx"));
+const FAQ = lazy(() => import("./pages/FAQ.tsx"));
+const TermsAndConditions = lazy(() => import("./pages/TermsAndConditions.tsx"));
 
 const queryClient = new QueryClient();
 
@@ -29,8 +38,17 @@ const App = () => (
           <Suspense fallback={<Loader />}>
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/cricket" element={<Cricket />} />
+              <Route path="/fantasy-cricket" element={<FantasyCricket />} />
+              <Route path="/casino" element={<Casino />} />
+              <Route path="/live-card" element={<LiveCard />} />
+              <Route path="/slot-games" element={<SlotGames />} />
+              <Route path="/crash-games" element={<CrashGames />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
+              <Route path="/about-us" element={<AboutUs />} />
+              <Route path="/faq" element={<FAQ />} />
+              <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

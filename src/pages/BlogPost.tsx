@@ -46,11 +46,11 @@ const BlogPost = () => {
       <Helmet>
         <title>{post.metaTitle}</title>
         <meta name="description" content={post.metaDescription} />
-        <link rel="canonical" href={`https://babu88.game/blog/${post.slug}`} />
+        <link rel="canonical" href={`https://www.babu8.online/blog/${post.slug}`} />
         <meta property="og:title" content={post.metaTitle} />
         <meta property="og:description" content={post.metaDescription} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://babu88.game/blog/${post.slug}`} />
+        <meta property="og:url" content={`https://www.babu8.online/blog/${post.slug}`} />
         <meta property="og:image" content={post.image} />
         <meta property="article:published_time" content={post.date} />
         <meta property="article:section" content={post.category} />
@@ -63,9 +63,9 @@ const BlogPost = () => {
           "image": post.image,
           "datePublished": post.date,
           "author": { "@type": "Person", "name": post.author },
-          "publisher": { "@type": "Organization", "name": "Babu88", "url": "https://babu88.game" },
-          "url": `https://babu88.game/blog/${post.slug}`,
-          "mainEntityOfPage": { "@type": "WebPage", "@id": `https://babu88.game/blog/${post.slug}` }
+          "publisher": { "@type": "Organization", "name": "Babu88", "url": "https://www.babu8.online" },
+          "url": `https://www.babu8.online/blog/${post.slug}`,
+          "mainEntityOfPage": { "@type": "WebPage", "@id": `https://www.babu8.online/blog/${post.slug}` }
         })}</script>
       </Helmet>
 

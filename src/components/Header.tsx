@@ -1,19 +1,20 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const WHATSAPP_LINK = "https://wa.link/reddyanna_";
 
 const menuItems = [
-  { label: "Cricket", href: WHATSAPP_LINK, external: true },
-  { label: "Fantasy Cricket", href: WHATSAPP_LINK, external: true },
-  { label: "Casino", href: WHATSAPP_LINK, external: true },
-  { label: "Live Card", href: WHATSAPP_LINK, external: true },
-  { label: "Slot Games", href: WHATSAPP_LINK, external: true },
-  { label: "Crash Games", href: WHATSAPP_LINK, external: true },
+  { label: "Cricket", href: "/cricket", external: false },
+  { label: "Fantasy Cricket", href: "/fantasy-cricket", external: false },
+  { label: "Casino", href: "/casino", external: false },
+  { label: "Live Card", href: "/live-card", external: false },
+  { label: "Slot Games", href: "/slot-games", external: false },
+  { label: "Crash Games", href: "/crash-games", external: false },
   { label: "Blog", href: "/blog", external: false },
-  { label: "About Us", href: WHATSAPP_LINK, external: true },
-  { label: "FAQ", href: "/#faq", external: false },
-  { label: "T&C", href: WHATSAPP_LINK, external: true },
+  { label: "About Us", href: "/about-us", external: false },
+  { label: "FAQ", href: "/faq", external: false },
+  { label: "T&C", href: "/terms-and-conditions", external: false },
 ];
 
 const Header = () => {
@@ -61,16 +62,14 @@ const Header = () => {
           <div className="fixed top-12 left-0 bottom-0 w-64 z-50 bg-card border-r border-border overflow-y-auto">
             <div className="py-2">
               {menuItems.map((item) => (
-                <a
+                <Link
                   key={item.label}
-                  href={item.href}
-                  target={item.external ? "_blank" : undefined}
-                  rel={item.external ? "noopener noreferrer" : undefined}
+                  to={item.href}
                   className="block px-4 py-3 text-sm text-foreground hover:bg-secondary border-b border-border transition-colors"
                   onClick={() => setMenuOpen(false)}
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
             </div>
           </div>

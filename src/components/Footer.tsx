@@ -10,31 +10,28 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-bold text-xs text-foreground mb-2 uppercase">Games</h4>
             <ul className="space-y-1.5">
-              {["Cricket", "Fantasy", "Casino", "Slots", "Cards", "Crash"].map((item) => (
-                <li key={item}>
-                  <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="text-[10px] text-muted-foreground hover:text-primary transition-colors">
-                    {item}
-                  </a>
-                </li>
-              ))}
+              <li><Link to="/cricket" className="text-[10px] text-muted-foreground hover:text-primary transition-colors">Cricket</Link></li>
+              <li><Link to="/fantasy-cricket" className="text-[10px] text-muted-foreground hover:text-primary transition-colors">Fantasy</Link></li>
+              <li><Link to="/casino" className="text-[10px] text-muted-foreground hover:text-primary transition-colors">Casino</Link></li>
+              <li><Link to="/slot-games" className="text-[10px] text-muted-foreground hover:text-primary transition-colors">Slots</Link></li>
+              <li><Link to="/live-card" className="text-[10px] text-muted-foreground hover:text-primary transition-colors">Cards</Link></li>
+              <li><Link to="/crash-games" className="text-[10px] text-muted-foreground hover:text-primary transition-colors">Crash</Link></li>
             </ul>
           </div>
           <div>
             <h4 className="font-heading font-bold text-xs text-foreground mb-2 uppercase">Company</h4>
             <ul className="space-y-1.5">
-              <li><a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="text-[10px] text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
+              <li><Link to="/about-us" className="text-[10px] text-muted-foreground hover:text-primary transition-colors">About Us</Link></li>
               <li><a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="text-[10px] text-muted-foreground hover:text-primary transition-colors">Contact</a></li>
               <li><Link to="/blog" className="text-[10px] text-muted-foreground hover:text-primary transition-colors">Blog</Link></li>
-              <li><a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="text-[10px] text-muted-foreground hover:text-primary transition-colors">Careers</a></li>
             </ul>
           </div>
           <div>
             <h4 className="font-heading font-bold text-xs text-foreground mb-2 uppercase">Support</h4>
             <ul className="space-y-1.5">
-              <li><a href="#faq" className="text-[10px] text-muted-foreground hover:text-primary transition-colors">FAQ</a></li>
+              <li><Link to="/faq" className="text-[10px] text-muted-foreground hover:text-primary transition-colors">FAQ</Link></li>
               <li><a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="text-[10px] text-muted-foreground hover:text-primary transition-colors">Help</a></li>
-              <li><a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="text-[10px] text-muted-foreground hover:text-primary transition-colors">Privacy</a></li>
-              <li><a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="text-[10px] text-muted-foreground hover:text-primary transition-colors">T&C</a></li>
+              <li><Link to="/terms-and-conditions" className="text-[10px] text-muted-foreground hover:text-primary transition-colors">T&C</Link></li>
             </ul>
           </div>
         </div>

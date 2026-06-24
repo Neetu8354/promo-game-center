@@ -60,7 +60,7 @@ const SEOHead = () => {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Babu88",
-    "url": "https://babu88.game",
+    "url": "https://www.babu8.online",
     "description": "India's premier gaming platform for cricket, casino, and entertainment",
     "foundingDate": "2024",
     "contactPoint": {
@@ -76,10 +76,10 @@ const SEOHead = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://babu88.game" },
-      { "@type": "ListItem", "position": 2, "name": "Cricket", "item": "https://babu88.game/#cricket" },
-      { "@type": "ListItem", "position": 3, "name": "Casino", "item": "https://babu88.game/#casino" },
-      { "@type": "ListItem", "position": 4, "name": "Blog", "item": "https://babu88.game/blog" }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.babu8.online" },
+      { "@type": "ListItem", "position": 2, "name": "Cricket", "item": "https://www.babu8.online/cricket" },
+      { "@type": "ListItem", "position": 3, "name": "Casino", "item": "https://www.babu8.online/casino" },
+      { "@type": "ListItem", "position": 4, "name": "Blog", "item": "https://www.babu8.online/blog" }
     ]
   };
 
@@ -94,14 +94,14 @@ const SEOHead = () => {
       <meta name="geo.placename" content="India" />
       <meta name="language" content="English" />
       <meta httpEquiv="content-language" content="en-IN" />
-      <link rel="canonical" href="https://babu88.game" />
+      <link rel="canonical" href="https://www.babu8.online" />
 
       {/* Open Graph */}
       <meta property="og:site_name" content="Babu88" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Babu88 - #1 Cricket & Casino Gaming Platform in India" />
       <meta property="og:description" content="Play fantasy cricket, live casino, Teen Patti, Andar Bahar, slots & crash games. Live IPL 2026 odds on Babu88." />
-      <meta property="og:url" content="https://babu88.game" />
+      <meta property="og:url" content="https://www.babu8.online" />
       <meta property="og:locale" content="en_IN" />
 
       {/* Twitter */}

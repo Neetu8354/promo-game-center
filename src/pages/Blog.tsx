@@ -15,21 +15,21 @@ const Blog = () => {
       <Helmet>
         <title>Babu88 Blog - Cricket Tips, Casino Guides & Gaming Strategies</title>
         <meta name="description" content="Read expert articles on cricket analysis, fantasy cricket tips, casino game strategies, and responsible gaming guides on the Babu88 blog." />
-        <link rel="canonical" href="https://babu88.game/blog" />
+        <link rel="canonical" href="https://www.babu8.online/blog" />
         <meta property="og:title" content="Babu88 Blog - Cricket Tips, Casino Guides & Gaming Strategies" />
         <meta property="og:description" content="Read expert articles on cricket analysis, fantasy cricket tips, casino game strategies, and responsible gaming guides." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://babu88.game/blog" />
+        <meta property="og:url" content="https://www.babu8.online/blog" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Blog",
           "name": "Babu88 Blog",
           "description": "Expert articles on cricket, casino games, and gaming strategies",
-          "url": "https://babu88.game/blog",
+          "url": "https://www.babu8.online/blog",
           "publisher": {
             "@type": "Organization",
             "name": "Babu88",
-            "url": "https://babu88.game"
+            "url": "https://www.babu8.online"
           },
           "blogPost": blogPosts.map(p => ({
             "@type": "BlogPosting",
@@ -37,7 +37,7 @@ const Blog = () => {
             "description": p.excerpt,
             "datePublished": p.date,
             "author": { "@type": "Person", "name": p.author },
-            "url": `https://babu88.game/blog/${p.slug}`
+            "url": `https://www.babu8.online/blog/${p.slug}`
           }))
         })}</script>
       </Helmet>
