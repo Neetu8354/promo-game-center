@@ -39,7 +39,7 @@ const SlotGames = () => {
 
       <Header />
 
-      <main className="px-3 py-4 pb-20 max-w-lg mx-auto">
+      <main className="px-4 md:px-8 py-6 pb-24 md:pb-10 max-w-6xl mx-auto">
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="mb-4">
           <ol className="flex items-center gap-1.5 text-xs text-muted-foreground">
@@ -65,13 +65,13 @@ const SlotGames = () => {
 
         {/* Features */}
         <section className="mb-6">
-          <h2 className="font-heading text-lg font-bold text-foreground mb-3">Slot Features</h2>
-          <div className="grid grid-cols-2 gap-3">
+          <h2 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-4">Slot Features</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {features.map((f, i) => (
-              <div key={i} className="bg-card border border-border rounded-lg p-3">
+              <div key={i} className="bg-card border border-border rounded-lg p-4">
                 <div className="text-primary mb-2">{f.icon}</div>
-                <h3 className="text-sm font-bold text-foreground mb-1">{f.title}</h3>
-                <p className="text-[10px] text-muted-foreground">{f.desc}</p>
+                <h3 className="text-sm md:text-base font-bold text-foreground mb-1">{f.title}</h3>
+                <p className="text-xs text-muted-foreground">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -79,22 +79,22 @@ const SlotGames = () => {
 
         {/* Top Slots */}
         <section className="mb-6">
-          <h2 className="font-heading text-lg font-bold text-foreground mb-3">Top Slot Games</h2>
-          <div className="space-y-2">
+          <h2 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-4">Top Slot Games</h2>
+          <div className="space-y-2 md:grid md:grid-cols-2 md:gap-3 md:space-y-0">
             {slots.map((s, i) => (
               <a
                 key={i}
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 bg-card border border-border rounded-lg p-3 hover:border-primary/50 transition-all"
+                className="flex items-center gap-3 bg-card border border-border rounded-lg p-4 hover:border-primary/50 transition-all"
               >
                 <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center text-xl shrink-0">
                   {s.theme.split(" ")[0]}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-sm font-bold text-foreground">{s.name}</h3>
-                  <p className="text-[10px] text-muted-foreground">{s.theme.split(" ").slice(1).join(" ")}</p>
+                  <h3 className="text-sm md:text-base font-bold text-foreground">{s.name}</h3>
+                  <p className="text-xs text-muted-foreground">{s.theme.split(" ").slice(1).join(" ")}</p>
                 </div>
                 <div className="text-right shrink-0 space-y-1">
                   <div className="text-[10px] font-bold text-green-500">RTP {s.rtp}</div>
@@ -107,7 +107,7 @@ const SlotGames = () => {
 
         {/* How Slots Work */}
         <section className="mb-6">
-          <h2 className="font-heading text-lg font-bold text-foreground mb-3">Understanding Slots</h2>
+          <h2 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-4">Understanding Slots</h2>
           <div className="bg-card border border-border rounded-lg p-4 space-y-3">
             <div>
               <h3 className="text-sm font-bold text-foreground mb-1">What is RTP?</h3>
@@ -126,8 +126,8 @@ const SlotGames = () => {
 
         {/* SEO Content */}
         <section className="mb-6 bg-card border border-border rounded-lg p-4">
-          <h2 className="font-heading text-base font-bold text-foreground mb-2">Slot Games at Babu88</h2>
-          <p className="text-xs text-muted-foreground leading-relaxed mb-2">
+          <h2 className="font-heading text-lg md:text-xl font-bold text-foreground mb-3">Slot Games at Babu88</h2>
+          <p className="text-sm text-muted-foreground leading-relaxed mb-2">
             Babu88 hosts one of India's largest online slot game collections, featuring 500+ titles from world-leading game providers. From Indian mythology and Bollywood-themed slots to classic fruit machines and progressive jackpot games, there's something for every player.
           </p>
           <p className="text-xs text-muted-foreground leading-relaxed">

@@ -72,7 +72,7 @@ const TermsAndConditions = () => {
 
       <Header />
 
-      <main className="px-3 py-4 pb-20 max-w-lg mx-auto">
+      <main className="px-4 md:px-8 py-6 pb-24 md:pb-10 max-w-4xl mx-auto">
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="mb-4">
           <ol className="flex items-center gap-1.5 text-xs text-muted-foreground">
@@ -82,18 +82,18 @@ const TermsAndConditions = () => {
           </ol>
         </nav>
 
-        <h1 className="font-heading text-2xl font-bold text-foreground mb-1">Terms & Conditions</h1>
-        <p className="text-xs text-muted-foreground mb-6">Last updated: January 2026</p>
+        <h1 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-1">Terms & Conditions</h1>
+        <p className="text-sm text-muted-foreground mb-6">Last updated: January 2026</p>
 
-        <div className="bg-primary/10 border border-primary/30 rounded-lg p-3 mb-6">
-          <p className="text-xs text-foreground font-medium">⚠️ Please read these terms carefully before using Babu88. By accessing our platform, you agree to these terms in full.</p>
+        <div className="bg-primary/10 border border-primary/30 rounded-lg p-4 mb-6">
+          <p className="text-sm text-foreground font-medium">⚠️ Please read these terms carefully before using Babu88. By accessing our platform, you agree to these terms in full.</p>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-4 md:grid md:grid-cols-2 md:gap-4 md:space-y-0">
           {sections.map((s, i) => (
-            <section key={i} className="bg-card border border-border rounded-lg p-4">
-              <h2 className="font-heading text-sm font-bold text-foreground mb-2">{s.title}</h2>
-              <p className="text-xs text-muted-foreground leading-relaxed">{s.content}</p>
+            <section key={i} className="bg-card border border-border rounded-lg p-5">
+              <h2 className="font-heading text-sm md:text-base font-bold text-foreground mb-2">{s.title}</h2>
+              <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">{s.content}</p>
             </section>
           ))}
         </div>

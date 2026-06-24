@@ -78,7 +78,7 @@ const FAQ = () => {
 
       <Header />
 
-      <main className="px-3 py-4 pb-20 max-w-lg mx-auto">
+      <main className="px-4 md:px-8 py-6 pb-24 md:pb-10 max-w-4xl mx-auto">
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="mb-4">
           <ol className="flex items-center gap-1.5 text-xs text-muted-foreground">
@@ -88,8 +88,8 @@ const FAQ = () => {
           </ol>
         </nav>
 
-        <h1 className="font-heading text-2xl font-bold text-foreground mb-2">Frequently Asked Questions</h1>
-        <p className="text-sm text-muted-foreground mb-6">Everything you need to know about Babu88.</p>
+        <h1 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-2">Frequently Asked Questions</h1>
+        <p className="text-sm md:text-base text-muted-foreground mb-6">Everything you need to know about Babu88.</p>
 
         {/* FAQ Accordion */}
         <section className="mb-6 space-y-2" id="faq">
@@ -99,7 +99,7 @@ const FAQ = () => {
                 className="w-full flex items-center justify-between px-4 py-3 text-left"
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
               >
-                <span className="text-sm font-semibold text-foreground pr-3">{faq.q}</span>
+                <span className="text-sm md:text-base font-semibold text-foreground pr-3">{faq.q}</span>
                 {openIndex === i
                   ? <ChevronUp size={16} className="text-primary shrink-0" />
                   : <ChevronDown size={16} className="text-muted-foreground shrink-0" />
@@ -107,7 +107,7 @@ const FAQ = () => {
               </button>
               {openIndex === i && (
                 <div className="px-4 pb-3 border-t border-border">
-                  <p className="text-xs text-muted-foreground leading-relaxed pt-2">{faq.a}</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed pt-2">{faq.a}</p>
                 </div>
               )}
             </div>
@@ -116,8 +116,8 @@ const FAQ = () => {
 
         {/* CTA */}
         <div className="bg-card border border-border rounded-lg p-4 text-center">
-          <h2 className="font-heading text-base font-bold text-foreground mb-2">Still have questions?</h2>
-          <p className="text-xs text-muted-foreground mb-4">Our support team is available 24/7 on WhatsApp.</p>
+          <h2 className="font-heading text-lg md:text-xl font-bold text-foreground mb-2">Still have questions?</h2>
+          <p className="text-sm text-muted-foreground mb-4">Our support team is available 24/7 on WhatsApp.</p>
           <a
             href={WHATSAPP_LINK}
             target="_blank"

@@ -23,18 +23,45 @@ const Header = () => {
   return (
     <>
       <header className="sticky top-0 z-50 bg-secondary border-b border-border">
-        <div className="flex items-center justify-between px-3 h-12">
+        <div className="flex items-center justify-between px-4 lg:px-8 h-14 max-w-7xl mx-auto">
+          {/* Logo + mobile hamburger */}
           <div className="flex items-center gap-2">
-            <button onClick={() => setMenuOpen(!menuOpen)} className="text-foreground p-1">
+            <button onClick={() => setMenuOpen(!menuOpen)} className="text-foreground p-1 md:hidden">
               {menuOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
-            <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="flex items-center">
+            <Link to="/" className="flex items-center">
               <span className="font-heading font-bold text-xl italic text-foreground">
                 Babu<span className="text-primary">88</span>
               </span>
-            </a>
+            </Link>
           </div>
+
+          {/* Desktop nav */}
+          <nav className="hidden md:flex items-center gap-1">
+            {menuItems.slice(0, 6).map((item) => (
+              <Link
+                key={item.label}
+                to={item.href}
+                className="px-3 py-1.5 text-sm text-muted-foreground hover:text-primary hover:bg-primary/10 rounded-md transition-colors font-medium"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+
+          {/* Right actions */}
           <div className="flex items-center gap-2">
+            <div className="hidden md:flex items-center gap-1 mr-2">
+              {menuItems.slice(6).map((item) => (
+                <Link
+                  key={item.label}
+                  to={item.href}
+                  className="px-2.5 py-1 text-xs text-muted-foreground hover:text-primary transition-colors font-medium"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
             <a
               href={WHATSAPP_LINK}
               target="_blank"
@@ -55,7 +82,7 @@ const Header = () => {
         </div>
       </header>
 
-      {/* Mobile sidebar overlay */}
+      {/* Mobile sidebar overlay — only on mobile */}
       {menuOpen && (
         <>
           <div className="fixed inset-0 z-40 bg-background/80" onClick={() => setMenuOpen(false)} />

@@ -39,7 +39,7 @@ const LiveCard = () => {
 
       <Header />
 
-      <main className="px-3 py-4 pb-20 max-w-lg mx-auto">
+      <main className="px-4 md:px-8 py-6 pb-24 md:pb-10 max-w-6xl mx-auto">
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="mb-4">
           <ol className="flex items-center gap-1.5 text-xs text-muted-foreground">
@@ -51,8 +51,8 @@ const LiveCard = () => {
 
         {/* Hero */}
         <div className="rounded-xl bg-gradient-to-br from-red-500/20 to-red-500/5 border border-red-500/30 p-5 mb-6 text-center">
-          <h1 className="font-heading text-2xl font-bold text-foreground mb-2">🎴 Live Card Games</h1>
-          <p className="text-sm text-muted-foreground mb-4">Real dealers. Real cards. Real-time action — 24/7</p>
+          <h1 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-3">🎴 Live Card Games</h1>
+          <p className="text-sm md:text-base text-muted-foreground mb-5">Real dealers. Real cards. Real-time action — 24/7</p>
           <a
             href={WHATSAPP_LINK}
             target="_blank"
@@ -65,20 +65,20 @@ const LiveCard = () => {
 
         {/* Live Games */}
         <section className="mb-6">
-          <h2 className="font-heading text-lg font-bold text-foreground mb-3">Live Games Available Now</h2>
-          <div className="space-y-2">
+          <h2 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-4">Live Games Available Now</h2>
+          <div className="space-y-2 md:grid md:grid-cols-2 md:gap-3 md:space-y-0">
             {cardGames.map((g, i) => (
               <a
                 key={i}
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 bg-card border border-border rounded-lg p-3 hover:border-primary/50 transition-all"
+                className="flex items-center gap-3 bg-card border border-border rounded-lg p-4 hover:border-primary/50 transition-all"
               >
                 <span className="text-2xl">{g.icon}</span>
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-sm font-bold text-foreground">{g.name}</h3>
-                  <p className="text-[10px] text-muted-foreground">{g.desc}</p>
+                  <h3 className="text-sm md:text-base font-bold text-foreground">{g.name}</h3>
+                  <p className="text-xs text-muted-foreground">{g.desc}</p>
                 </div>
                 <div className="text-right shrink-0">
                   <span className="text-[10px] font-bold text-green-500">{g.players}</span>
@@ -94,13 +94,13 @@ const LiveCard = () => {
 
         {/* Advantages */}
         <section className="mb-6">
-          <h2 className="font-heading text-lg font-bold text-foreground mb-3">Live Gaming Advantages</h2>
-          <div className="grid grid-cols-2 gap-3">
+          <h2 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-4">Live Gaming Advantages</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {advantages.map((a, i) => (
-              <div key={i} className="bg-card border border-border rounded-lg p-3">
+              <div key={i} className="bg-card border border-border rounded-lg p-4">
                 <div className="text-primary mb-2">{a.icon}</div>
-                <h3 className="text-sm font-bold text-foreground mb-1">{a.title}</h3>
-                <p className="text-[10px] text-muted-foreground">{a.desc}</p>
+                <h3 className="text-sm md:text-base font-bold text-foreground mb-1">{a.title}</h3>
+                <p className="text-xs text-muted-foreground">{a.desc}</p>
               </div>
             ))}
           </div>
@@ -108,8 +108,8 @@ const LiveCard = () => {
 
         {/* SEO Content */}
         <section className="mb-6 bg-card border border-border rounded-lg p-4">
-          <h2 className="font-heading text-base font-bold text-foreground mb-2">Live Card Games on Babu88</h2>
-          <p className="text-xs text-muted-foreground leading-relaxed mb-2">
+          <h2 className="font-heading text-lg md:text-xl font-bold text-foreground mb-3">Live Card Games on Babu88</h2>
+          <p className="text-sm text-muted-foreground leading-relaxed mb-2">
             Experience the thrill of real casino card games from your smartphone. Babu88's live card game lobby features professional dealers, multiple camera angles, and interactive chat — bringing the authentic casino atmosphere straight to you.
           </p>
           <p className="text-xs text-muted-foreground leading-relaxed">

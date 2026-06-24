@@ -37,7 +37,7 @@ const FantasyCricket = () => {
 
       <Header />
 
-      <main className="px-3 py-4 pb-20 max-w-lg mx-auto">
+      <main className="px-4 md:px-8 py-6 pb-24 md:pb-10 max-w-6xl mx-auto">
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="mb-4">
           <ol className="flex items-center gap-1.5 text-xs text-muted-foreground">
@@ -49,8 +49,8 @@ const FantasyCricket = () => {
 
         {/* Hero */}
         <div className="rounded-xl bg-gradient-to-br from-green-500/20 to-green-500/5 border border-green-500/30 p-5 mb-6 text-center">
-          <h1 className="font-heading text-2xl font-bold text-foreground mb-2">🏆 Fantasy Cricket</h1>
-          <p className="text-sm text-muted-foreground mb-4">Build your dream XI and win big prizes on every IPL match</p>
+          <h1 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-3">🏆 Fantasy Cricket</h1>
+          <p className="text-sm md:text-base text-muted-foreground mb-5">Build your dream XI and win big prizes on every IPL match</p>
           <a
             href={WHATSAPP_LINK}
             target="_blank"
@@ -63,10 +63,10 @@ const FantasyCricket = () => {
 
         {/* How It Works */}
         <section className="mb-6">
-          <h2 className="font-heading text-lg font-bold text-foreground mb-3">How to Play</h2>
-          <div className="space-y-3">
+          <h2 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-4">How to Play</h2>
+          <div className="space-y-3 md:grid md:grid-cols-2 md:gap-4 md:space-y-0">
             {steps.map((s) => (
-              <div key={s.step} className="flex gap-3 bg-card border border-border rounded-lg p-3 items-start">
+              <div key={s.step} className="flex gap-3 bg-card border border-border rounded-lg p-4 items-start">
                 <span className="text-primary font-heading font-bold text-xl w-10 shrink-0">{s.step}</span>
                 <div>
                   <h3 className="text-sm font-bold text-foreground">{s.title}</h3>
@@ -79,13 +79,13 @@ const FantasyCricket = () => {
 
         {/* Tips */}
         <section className="mb-6">
-          <h2 className="font-heading text-lg font-bold text-foreground mb-3">Winning Tips</h2>
-          <div className="grid grid-cols-2 gap-3">
+          <h2 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-4">Winning Tips</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {tips.map((t, i) => (
-              <div key={i} className="bg-card border border-border rounded-lg p-3">
-                <div className="text-primary mb-1.5">{t.icon}</div>
-                <h3 className="text-xs font-bold text-foreground mb-1">{t.title}</h3>
-                <p className="text-[10px] text-muted-foreground">{t.desc}</p>
+              <div key={i} className="bg-card border border-border rounded-lg p-4">
+                <div className="text-primary mb-2">{t.icon}</div>
+                <h3 className="text-sm font-bold text-foreground mb-1">{t.title}</h3>
+                <p className="text-xs text-muted-foreground">{t.desc}</p>
               </div>
             ))}
           </div>
@@ -93,11 +93,11 @@ const FantasyCricket = () => {
 
         {/* Scoring */}
         <section className="mb-6">
-          <h2 className="font-heading text-lg font-bold text-foreground mb-3">Scoring System</h2>
+          <h2 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-4">Scoring System</h2>
           <div className="bg-card border border-border rounded-lg overflow-hidden">
             <div className="grid grid-cols-2 bg-secondary">
-              <div className="px-3 py-2 text-xs font-bold text-foreground">Action</div>
-              <div className="px-3 py-2 text-xs font-bold text-foreground">Points</div>
+              <div className="px-4 py-2 text-sm font-bold text-foreground">Action</div>
+              <div className="px-4 py-2 text-sm font-bold text-foreground">Points</div>
             </div>
             {[
               ["Run scored", "+1"],
@@ -110,8 +110,8 @@ const FantasyCricket = () => {
               ["Run out", "+6"],
             ].map(([action, pts]) => (
               <div key={action} className="grid grid-cols-2 border-t border-border">
-                <div className="px-3 py-2 text-xs text-muted-foreground">{action}</div>
-                <div className="px-3 py-2 text-xs font-semibold text-primary">{pts}</div>
+                <div className="px-4 py-2 text-sm text-muted-foreground">{action}</div>
+                <div className="px-4 py-2 text-sm font-semibold text-primary">{pts}</div>
               </div>
             ))}
           </div>
@@ -119,8 +119,8 @@ const FantasyCricket = () => {
 
         {/* SEO Content */}
         <section className="mb-6 bg-card border border-border rounded-lg p-4">
-          <h2 className="font-heading text-base font-bold text-foreground mb-2">Fantasy Cricket on Babu88</h2>
-          <p className="text-xs text-muted-foreground leading-relaxed mb-2">
+          <h2 className="font-heading text-lg md:text-xl font-bold text-foreground mb-3">Fantasy Cricket on Babu88</h2>
+          <p className="text-sm text-muted-foreground leading-relaxed mb-2">
             Babu88 offers India's most exciting fantasy cricket contests for IPL 2026, T20 World Cup, and all major bilateral series. Create your fantasy team of 11 real cricket players and earn points based on their actual match performances.
           </p>
           <p className="text-xs text-muted-foreground leading-relaxed">

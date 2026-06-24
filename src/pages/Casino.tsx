@@ -39,7 +39,7 @@ const Casino = () => {
 
       <Header />
 
-      <main className="px-3 py-4 pb-20 max-w-lg mx-auto">
+      <main className="px-4 md:px-8 py-6 pb-24 md:pb-10 max-w-6xl mx-auto">
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="mb-4">
           <ol className="flex items-center gap-1.5 text-xs text-muted-foreground">
@@ -65,8 +65,8 @@ const Casino = () => {
 
         {/* Games Grid */}
         <section className="mb-6">
-          <h2 className="font-heading text-lg font-bold text-foreground mb-3">Popular Casino Games</h2>
-          <div className="grid grid-cols-2 gap-3">
+          <h2 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-4">Popular Casino Games</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {games.map((g, i) => (
               <a
                 key={i}
@@ -76,9 +76,9 @@ const Casino = () => {
                 className="bg-card border border-border rounded-lg p-3 hover:border-primary/50 transition-all text-center"
               >
                 <div className="text-3xl mb-2">{g.icon}</div>
-                <h3 className="text-sm font-bold text-foreground mb-1">{g.name}</h3>
-                <p className="text-[10px] text-muted-foreground">{g.desc}</p>
-                <span className="inline-block mt-2 text-[9px] font-bold text-primary bg-primary/10 px-2 py-0.5 rounded">{g.category}</span>
+                <h3 className="text-sm md:text-base font-bold text-foreground mb-1">{g.name}</h3>
+                <p className="text-xs text-muted-foreground">{g.desc}</p>
+                <span className="inline-block mt-2 text-xs font-bold text-primary bg-primary/10 px-2 py-0.5 rounded">{g.category}</span>
               </a>
             ))}
           </div>
@@ -86,13 +86,13 @@ const Casino = () => {
 
         {/* Features */}
         <section className="mb-6">
-          <h2 className="font-heading text-lg font-bold text-foreground mb-3">Why Play on Babu88?</h2>
-          <div className="grid grid-cols-2 gap-3">
+          <h2 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-4">Why Play on Babu88?</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {features.map((f, i) => (
-              <div key={i} className="bg-card border border-border rounded-lg p-3">
+              <div key={i} className="bg-card border border-border rounded-lg p-4">
                 <div className="text-primary mb-2">{f.icon}</div>
-                <h3 className="text-sm font-bold text-foreground mb-1">{f.title}</h3>
-                <p className="text-[10px] text-muted-foreground">{f.desc}</p>
+                <h3 className="text-sm md:text-base font-bold text-foreground mb-1">{f.title}</h3>
+                <p className="text-xs text-muted-foreground">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -100,11 +100,11 @@ const Casino = () => {
 
         {/* House Edge Table */}
         <section className="mb-6">
-          <h2 className="font-heading text-lg font-bold text-foreground mb-3">Game Odds at a Glance</h2>
+          <h2 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-4">Game Odds at a Glance</h2>
           <div className="bg-card border border-border rounded-lg overflow-hidden">
             <div className="grid grid-cols-2 bg-secondary">
-              <div className="px-3 py-2 text-xs font-bold text-foreground">Game</div>
-              <div className="px-3 py-2 text-xs font-bold text-foreground">House Edge</div>
+              <div className="px-4 py-2 text-sm font-bold text-foreground">Game</div>
+              <div className="px-4 py-2 text-sm font-bold text-foreground">House Edge</div>
             </div>
             {[
               ["Blackjack", "0.5%"],
@@ -115,8 +115,8 @@ const Casino = () => {
               ["Dragon Tiger", "3.73%"],
             ].map(([game, edge]) => (
               <div key={game} className="grid grid-cols-2 border-t border-border">
-                <div className="px-3 py-2 text-xs text-muted-foreground">{game}</div>
-                <div className="px-3 py-2 text-xs font-semibold text-primary">{edge}</div>
+                <div className="px-4 py-2 text-sm text-muted-foreground">{game}</div>
+                <div className="px-4 py-2 text-sm font-semibold text-primary">{edge}</div>
               </div>
             ))}
           </div>
@@ -124,8 +124,8 @@ const Casino = () => {
 
         {/* SEO Content */}
         <section className="mb-6 bg-card border border-border rounded-lg p-4">
-          <h2 className="font-heading text-base font-bold text-foreground mb-2">Online Casino India — Babu88</h2>
-          <p className="text-xs text-muted-foreground leading-relaxed mb-2">
+          <h2 className="font-heading text-lg md:text-xl font-bold text-foreground mb-3">Online Casino India — Babu88</h2>
+          <p className="text-sm text-muted-foreground leading-relaxed mb-2">
             Babu88 brings India's most loved casino games online — from traditional Teen Patti and Andar Bahar to internationally popular Roulette, Blackjack, and Baccarat. All games are powered by live dealers with HD video streaming.
           </p>
           <p className="text-xs text-muted-foreground leading-relaxed">

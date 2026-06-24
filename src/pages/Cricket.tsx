@@ -45,7 +45,7 @@ const Cricket = () => {
 
       <Header />
 
-      <main className="px-3 py-4 pb-20 max-w-lg mx-auto">
+      <main className="px-4 md:px-8 py-6 pb-24 md:pb-10 max-w-6xl mx-auto">
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="mb-4">
           <ol className="flex items-center gap-1.5 text-xs text-muted-foreground">
@@ -57,8 +57,8 @@ const Cricket = () => {
 
         {/* Hero */}
         <div className="rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 p-5 mb-6 text-center">
-          <h1 className="font-heading text-2xl font-bold text-foreground mb-2">🏏 Live Cricket Odds</h1>
-          <p className="text-sm text-muted-foreground mb-4">IPL 2026 · T20s · ODIs · Test Matches — all in one place</p>
+          <h1 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-3">🏏 Live Cricket Odds</h1>
+          <p className="text-sm md:text-base text-muted-foreground mb-5">IPL 2026 · T20s · ODIs · Test Matches — all in one place</p>
           <a
             href={WHATSAPP_LINK}
             target="_blank"
@@ -71,15 +71,15 @@ const Cricket = () => {
 
         {/* Upcoming Matches */}
         <section className="mb-6">
-          <h2 className="font-heading text-lg font-bold text-foreground mb-3">Upcoming Matches</h2>
-          <div className="space-y-2">
+          <h2 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-4">Upcoming Matches</h2>
+          <div className="space-y-3 md:grid md:grid-cols-2 md:gap-4 md:space-y-0">
             {matches.map((m, i) => (
               <a
                 key={i}
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block bg-card border border-border rounded-lg p-3 hover:border-primary/50 transition-all"
+                className="block bg-card border border-border rounded-lg p-4 hover:border-primary/50 transition-all"
               >
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-[10px] font-bold text-primary uppercase bg-primary/10 px-2 py-0.5 rounded">{m.status}</span>
@@ -87,9 +87,9 @@ const Cricket = () => {
                 </div>
                 <div className="flex items-center justify-between">
                   <div className="flex-1">
-                    <p className="text-sm font-semibold text-foreground">{m.team1}</p>
-                    <p className="text-[10px] text-muted-foreground">vs</p>
-                    <p className="text-sm font-semibold text-foreground">{m.team2}</p>
+                    <p className="text-sm md:text-base font-semibold text-foreground">{m.team1}</p>
+                    <p className="text-xs text-muted-foreground">vs</p>
+                    <p className="text-sm md:text-base font-semibold text-foreground">{m.team2}</p>
                   </div>
                   <div className="flex gap-2">
                     <div className="text-center">
@@ -109,13 +109,13 @@ const Cricket = () => {
 
         {/* Features */}
         <section className="mb-6">
-          <h2 className="font-heading text-lg font-bold text-foreground mb-3">Why Babu88 Cricket?</h2>
-          <div className="grid grid-cols-2 gap-3">
+          <h2 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-4">Why Babu88 Cricket?</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {features.map((f, i) => (
-              <div key={i} className="bg-card border border-border rounded-lg p-3">
+              <div key={i} className="bg-card border border-border rounded-lg p-4">
                 <div className="text-primary mb-2">{f.icon}</div>
-                <h3 className="text-sm font-bold text-foreground mb-1">{f.title}</h3>
-                <p className="text-[10px] text-muted-foreground">{f.desc}</p>
+                <h3 className="text-sm md:text-base font-bold text-foreground mb-1">{f.title}</h3>
+                <p className="text-xs text-muted-foreground">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -123,8 +123,8 @@ const Cricket = () => {
 
         {/* SEO Content */}
         <section className="mb-6 bg-card border border-border rounded-lg p-4">
-          <h2 className="font-heading text-base font-bold text-foreground mb-2">Cricket Betting at Babu88</h2>
-          <p className="text-xs text-muted-foreground leading-relaxed mb-2">
+          <h2 className="font-heading text-lg md:text-xl font-bold text-foreground mb-3">Cricket Betting at Babu88</h2>
+          <p className="text-sm text-muted-foreground leading-relaxed mb-2">
             Babu88 is India's premier destination for live cricket odds covering IPL 2026, T20 World Cup, ODI series, and Test matches. Our platform provides real-time ball-by-ball odds with the best rates in the Indian market.
           </p>
           <p className="text-xs text-muted-foreground leading-relaxed">
