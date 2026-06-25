@@ -1,67 +1,72 @@
 import { Wifi } from "lucide-react";
-
-const WHATSAPP_LINK = "https://wa.link/reddyanna_";
+import { Link } from "react-router-dom";
 
 const matches = [
   {
-    team1: "Mumbai Indians v Chennai Super Kings",
-    time: "Today at 7:30 PM",
+    team1: "India v England",
+    series: "T20I Series • 3rd T20I",
+    time: "Today at 7:00 PM IST",
     live: true,
     odds: [
-      { back1: "1.85", back2: "1.90", back3: "-", lay1: "-", lay2: "2.10", lay3: "2.15" },
+      { back1: "1.72", back2: "1.75", back3: "-", lay1: "-", lay2: "2.28", lay3: "2.32" },
+    ],
+    min: 100,
+    max: 50000,
+  },
+  {
+    team1: "Pakistan v West Indies",
+    series: "ODI Series • 2nd ODI",
+    time: "Today at 2:30 PM IST",
+    live: false,
+    odds: [
+      { back1: "1.55", back2: "1.58", back3: "-", lay1: "-", lay2: "2.65", lay3: "2.70" },
     ],
     min: 100,
     max: 25000,
   },
   {
-    team1: "Sri Lanka A v New Zealand A",
-    time: "Today at 10:00 AM",
-    live: false,
+    team1: "Australia v South Africa",
+    series: "Test Series • 2nd Test Day 2",
+    time: "Today at 5:00 AM IST",
+    live: true,
     odds: [
-      { back1: "-", back2: "-", back3: "-", lay1: "-", lay2: "-", lay3: "-" },
+      { back1: "2.10", back2: "2.14", back3: "-", lay1: "-", lay2: "1.92", lay3: "1.94" },
     ],
     min: 100,
-    max: 1,
+    max: 30000,
   },
   {
-    team1: "Scotland v Oman",
-    time: "Today at 1:00 PM",
+    team1: "New Zealand v Sri Lanka",
+    series: "T20I Series • 1st T20I",
+    time: "Tomorrow at 12:00 PM IST",
     live: false,
     odds: [
-      { back1: "1.35", back2: "1.38", back3: "-", lay1: "-", lay2: "3.6", lay3: "3.85" },
+      { back1: "1.48", back2: "1.50", back3: "-", lay1: "-", lay2: "2.90", lay3: "2.95" },
     ],
     min: 100,
-    max: 1,
+    max: 20000,
   },
   {
-    team1: "Delhi Capitals v Gujarat Titans",
-    time: "Today at 3:30 PM",
+    team1: "Bangladesh v Zimbabwe",
+    series: "T20I Series • 2nd T20I",
+    time: "Tomorrow at 4:00 PM IST",
     live: false,
     odds: [
-      { back1: "-", back2: "-", back3: "-", lay1: "-", lay2: "-", lay3: "-" },
+      { back1: "1.22", back2: "1.24", back3: "-", lay1: "-", lay2: "5.2", lay3: "5.5" },
     ],
     min: 100,
-    max: 2000,
+    max: 10000,
   },
   {
-    team1: "Kolkata Knight Riders v Rajasthan Royals",
-    time: "Tomorrow 7:30 PM",
+    team1: "Ireland v Afghanistan",
+    series: "ODI Series • 1st ODI",
+    time: "26 Jun at 3:30 PM IST",
     live: false,
     odds: [
-      { back1: "1.27", back2: "1.29", back3: "-", lay1: "-", lay2: "4.4", lay3: "5.1" },
+      { back1: "3.80", back2: "3.90", back3: "-", lay1: "-", lay2: "1.35", lay3: "1.37" },
     ],
     min: 100,
-    max: 5000,
-  },
-  {
-    team1: "Punjab Kings v Sunrisers Hyderabad",
-    time: "Tomorrow 3:30 PM",
-    live: false,
-    odds: [
-      { back1: "2.16", back2: "2.2", back3: "-", lay1: "-", lay2: "1.84", lay3: "1.86" },
-    ],
-    min: 100,
-    max: 25000,
+    max: 10000,
   },
 ];
 
@@ -83,37 +88,34 @@ const CricketOdds = () => {
           <span className="font-heading font-bold text-sm text-primary-foreground uppercase tracking-wide">CRICKET</span>
         </div>
         <div className="flex gap-2">
-          <a
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/cricket"
             className="bg-primary-foreground text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase"
           >
             Live
-          </a>
-          <a
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
+          </Link>
+          <Link
+            to="/fantasy-cricket"
             className="border border-primary-foreground text-primary-foreground text-[10px] font-bold px-3 py-1 rounded-full uppercase"
           >
-            Virtual
-          </a>
+            Fantasy
+          </Link>
         </div>
       </div>
 
       {/* Match cards */}
       <div className="divide-y divide-border">
         {matches.map((match, i) => (
-          <a
+          <Link
             key={i}
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
+            to="/cricket"
             className="block bg-card hover:bg-secondary/30 transition-colors"
           >
             <div className="px-3 pt-2.5 pb-1 flex items-start justify-between">
-              <p className="text-sm font-semibold text-foreground flex-1 pr-2">{match.team1}</p>
+              <div className="flex-1 pr-2">
+                <p className="text-sm font-semibold text-foreground">{match.team1}</p>
+                <p className="text-[10px] text-muted-foreground">{match.series}</p>
+              </div>
               {match.live && (
                 <Wifi size={16} className="text-accent shrink-0 animate-live-dot" />
               )}
@@ -137,7 +139,7 @@ const CricketOdds = () => {
                 Min : {match.min} ⇅ Max : {match.max.toLocaleString("en-IN")}
               </span>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </section>

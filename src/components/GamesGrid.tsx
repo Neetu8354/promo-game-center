@@ -1,18 +1,17 @@
+import { Link } from "react-router-dom";
 import casinoImg from "@/assets/casino-games.jpg";
 import slotImg from "@/assets/slot-games.jpg";
 import fantasyImg from "@/assets/fantasy-cricket.jpg";
 import liveCardImg from "@/assets/live-card.jpg";
 import crashImg from "@/assets/crash-game.jpg";
 
-const WHATSAPP_LINK = "https://wa.link/reddyanna_";
-
 const games = [
-  { title: "Fantasy Cricket", subtitle: "Build your dream XI", image: fantasyImg, tag: "Popular" },
-  { title: "Casino", subtitle: "Roulette & Blackjack", image: casinoImg, tag: "Hot" },
-  { title: "Slot Games", subtitle: "777 Lucky Spins", image: slotImg, tag: "New" },
-  { title: "Live Cards", subtitle: "Teen Patti & Poker", image: liveCardImg, tag: "Live" },
-  { title: "Crash Game", subtitle: "Ride the multiplier", image: crashImg, tag: "Trending" },
-  { title: "Andar Bahar", subtitle: "Classic Indian game", image: liveCardImg, tag: "Popular" },
+  { title: "Fantasy Cricket", subtitle: "Build your dream XI", image: fantasyImg, tag: "Popular", to: "/fantasy-cricket" },
+  { title: "Casino", subtitle: "Roulette & Blackjack", image: casinoImg, tag: "Hot", to: "/casino" },
+  { title: "Slot Games", subtitle: "777 Lucky Spins", image: slotImg, tag: "New", to: "/slot-games" },
+  { title: "Live Cards", subtitle: "Teen Patti & Poker", image: liveCardImg, tag: "Live", to: "/live-card" },
+  { title: "Crash Game", subtitle: "Ride the multiplier", image: crashImg, tag: "Trending", to: "/crash-games" },
+  { title: "Andar Bahar", subtitle: "Classic Indian game", image: liveCardImg, tag: "Popular", to: "/casino" },
 ];
 
 const GamesGrid = () => {
@@ -22,18 +21,16 @@ const GamesGrid = () => {
         <h2 className="font-heading text-base font-bold text-foreground uppercase">
           🎮 All Games
         </h2>
-        <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="text-[11px] text-primary font-semibold">
+        <Link to="/casino" className="text-[11px] text-primary font-semibold">
           View All →
-        </a>
+        </Link>
       </div>
 
       <div className="grid grid-cols-3 gap-2">
         {games.map((game, i) => (
-          <a
+          <Link
             key={i}
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
+            to={game.to}
             className="group relative rounded-lg overflow-hidden border border-border hover:border-primary/50 transition-all"
           >
             <div className="aspect-square overflow-hidden">
@@ -54,7 +51,7 @@ const GamesGrid = () => {
               <h3 className="font-heading font-bold text-[11px] text-foreground leading-tight">{game.title}</h3>
               <p className="text-[9px] text-muted-foreground">{game.subtitle}</p>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </section>

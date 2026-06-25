@@ -1,14 +1,13 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import heroCricket from "@/assets/hero-cricket.jpg";
 import promoBonus from "@/assets/promo-bonus.jpg";
 import promoCricket from "@/assets/promo-cricket.jpg";
 
-const WHATSAPP_LINK = "https://wa.link/reddyanna_";
-
 const slides = [
-  { image: heroCricket },
-  { image: promoBonus },
-  { image: promoCricket },
+  { image: heroCricket, to: "/cricket", alt: "Babu8 live cricket exchange – IPL 2026 odds and betting" },
+  { image: promoBonus, to: "/casino", alt: "Babu8 online casino bonuses and promotions" },
+  { image: promoCricket, to: "/fantasy-cricket", alt: "Babu8 fantasy cricket – build your dream XI and win prizes" },
 ];
 
 const HeroBanner = () => {
@@ -21,17 +20,19 @@ const HeroBanner = () => {
 
   return (
     <div className="px-2 pt-2">
+      {/* Visible H1 for SEO - styled to sit just above the banner */}
+      <h1 className="font-heading text-lg md:text-2xl font-bold text-foreground mb-2 px-1">
+        Babu8 – India's Trusted Cricket Exchange &amp; Online Casino Platform
+      </h1>
       <div className="relative w-full aspect-[16/7] rounded-lg overflow-hidden">
         {slides.map((slide, i) => (
-          <a
+          <Link
             key={i}
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
+            to={slide.to}
             className={`absolute inset-0 transition-opacity duration-700 ${i === current ? "opacity-100" : "opacity-0 pointer-events-none"}`}
           >
-            <img src={slide.image} alt={`Babu88 cricket and casino promotional banner ${i + 1}`} className="w-full h-full object-cover" width={1920} height={640} />
-          </a>
+            <img src={slide.image} alt={slide.alt} className="w-full h-full object-cover" width={1920} height={640} />
+          </Link>
         ))}
       </div>
       {/* Dots */}
