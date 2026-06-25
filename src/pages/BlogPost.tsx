@@ -63,7 +63,7 @@ const BlogPost = () => {
           "image": post.image,
           "datePublished": post.date,
           "author": { "@type": "Person", "name": post.author },
-          "publisher": { "@type": "Organization", "name": "Babu88", "url": "https://www.babu8.online" },
+          "publisher": { "@type": "Organization", "name": "Babu8", "url": "https://www.babu8.online" },
           "url": `https://www.babu8.online/blog/${post.slug}`,
           "mainEntityOfPage": { "@type": "WebPage", "@id": `https://www.babu8.online/blog/${post.slug}` }
         })}</script>
@@ -115,7 +115,7 @@ const BlogPost = () => {
 
         {/* CTA */}
         <div className="bg-primary/10 border border-primary/30 rounded-lg p-4 mb-8 text-center">
-          <h3 className="font-heading text-lg font-bold text-foreground mb-2">Join Babu88 Today!</h3>
+          <h3 className="font-heading text-lg font-bold text-foreground mb-2">Join Babu8 Today!</h3>
           <p className="text-xs text-muted-foreground mb-3">Experience the best cricket and casino gaming platform in India.</p>
           <a
             href={WHATSAPP_LINK}

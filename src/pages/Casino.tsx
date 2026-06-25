@@ -28,10 +28,10 @@ const Casino = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Online Casino India - Teen Patti, Roulette & Live Games | Babu88</title>
-        <meta name="description" content="Play online casino games on Babu88 India. Teen Patti, Andar Bahar, Roulette, Blackjack and live dealer games with INR deposits. Join now!" />
+        <title>Online Casino India - Teen Patti, Roulette & Live Games | Babu8</title>
+        <meta name="description" content="Play online casino games on Babu8 India. Teen Patti, Andar Bahar, Roulette, Blackjack and live dealer games with INR deposits. Join now!" />
         <link rel="canonical" href={`${SITE_URL}/casino`} />
-        <meta property="og:title" content="Online Casino India - Teen Patti, Roulette & Live Games | Babu88" />
+        <meta property="og:title" content="Online Casino India - Teen Patti, Roulette & Live Games | Babu8" />
         <meta property="og:description" content="India's best online casino with Teen Patti, Roulette, Andar Bahar and live dealers. INR supported." />
         <meta property="og:url" content={`${SITE_URL}/casino`} />
         <meta property="og:type" content="website" />
@@ -86,7 +86,7 @@ const Casino = () => {
 
         {/* Features */}
         <section className="mb-6">
-          <h2 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-4">Why Play on Babu88?</h2>
+          <h2 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-4">Why Play on Babu8?</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {features.map((f, i) => (
               <div key={i} className="bg-card border border-border rounded-lg p-4">
@@ -124,9 +124,9 @@ const Casino = () => {
 
         {/* SEO Content */}
         <section className="mb-6 bg-card border border-border rounded-lg p-4">
-          <h2 className="font-heading text-lg md:text-xl font-bold text-foreground mb-3">Online Casino India — Babu88</h2>
+          <h2 className="font-heading text-lg md:text-xl font-bold text-foreground mb-3">Online Casino India — Babu8</h2>
           <p className="text-sm text-muted-foreground leading-relaxed mb-2">
-            Babu88 brings India's most loved casino games online — from traditional Teen Patti and Andar Bahar to internationally popular Roulette, Blackjack, and Baccarat. All games are powered by live dealers with HD video streaming.
+            Babu8 brings India's most loved casino games online — from traditional Teen Patti and Andar Bahar to internationally popular Roulette, Blackjack, and Baccarat. All games are powered by live dealers with HD video streaming.
           </p>
           <p className="text-xs text-muted-foreground leading-relaxed">
             Deposits and withdrawals in Indian Rupees (INR) are instant via UPI, Net Banking and popular wallets. Play responsibly — you must be 18+ to participate.

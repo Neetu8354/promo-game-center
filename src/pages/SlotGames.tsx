@@ -28,11 +28,11 @@ const SlotGames = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Online Slot Games India - Best Slots with High RTP | Babu88</title>
-        <meta name="description" content="Play 500+ online slot games on Babu88 India. High RTP slots, free spins, progressive jackpots. Indian-themed and international slots with INR support." />
+        <title>Online Slot Games India - Best Slots with High RTP | Babu8</title>
+        <meta name="description" content="Play 500+ online slot games on Babu8 India. High RTP slots, free spins, progressive jackpots. Indian-themed and international slots with INR support." />
         <link rel="canonical" href={`${SITE_URL}/slot-games`} />
-        <meta property="og:title" content="Online Slot Games India - Best Slots with High RTP | Babu88" />
-        <meta property="og:description" content="500+ online slots with high RTP on Babu88 India. Free spins, jackpots, mobile-ready." />
+        <meta property="og:title" content="Online Slot Games India - Best Slots with High RTP | Babu8" />
+        <meta property="og:description" content="500+ online slots with high RTP on Babu8 India. Free spins, jackpots, mobile-ready." />
         <meta property="og:url" content={`${SITE_URL}/slot-games`} />
         <meta property="og:type" content="website" />
       </Helmet>
@@ -126,9 +126,9 @@ const SlotGames = () => {
 
         {/* SEO Content */}
         <section className="mb-6 bg-card border border-border rounded-lg p-4">
-          <h2 className="font-heading text-lg md:text-xl font-bold text-foreground mb-3">Slot Games at Babu88</h2>
+          <h2 className="font-heading text-lg md:text-xl font-bold text-foreground mb-3">Slot Games at Babu8</h2>
           <p className="text-sm text-muted-foreground leading-relaxed mb-2">
-            Babu88 hosts one of India's largest online slot game collections, featuring 500+ titles from world-leading game providers. From Indian mythology and Bollywood-themed slots to classic fruit machines and progressive jackpot games, there's something for every player.
+            Babu8 hosts one of India's largest online slot game collections, featuring 500+ titles from world-leading game providers. From Indian mythology and Bollywood-themed slots to classic fruit machines and progressive jackpot games, there's something for every player.
           </p>
           <p className="text-xs text-muted-foreground leading-relaxed">
             All slot games are fully mobile-optimized and support INR bets. New slots added weekly. Play responsibly — you must be 18+ to participate.

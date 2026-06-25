@@ -26,17 +26,17 @@ const Cricket = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Cricket Betting & Live Odds - IPL 2026 | Babu88</title>
-        <meta name="description" content="Follow live cricket odds, IPL 2026 matches, and in-play betting on Babu88. Real-time scores, expert analysis and the best cricket odds in India." />
+        <title>Cricket Betting & Live Odds - IPL 2026 | Babu8</title>
+        <meta name="description" content="Follow live cricket odds, IPL 2026 matches, and in-play betting on Babu8. Real-time scores, expert analysis and the best cricket odds in India." />
         <link rel="canonical" href={`${SITE_URL}/cricket`} />
-        <meta property="og:title" content="Cricket Betting & Live Odds - IPL 2026 | Babu88" />
-        <meta property="og:description" content="Live cricket odds and IPL 2026 betting on Babu88 India's #1 cricket gaming platform." />
+        <meta property="og:title" content="Cricket Betting & Live Odds - IPL 2026 | Babu8" />
+        <meta property="og:description" content="Live cricket odds and IPL 2026 betting on Babu8 India's #1 cricket gaming platform." />
         <meta property="og:url" content={`${SITE_URL}/cricket`} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "SportsOrganization",
-          "name": "Babu88 Cricket",
+          "name": "Babu8 Cricket",
           "url": `${SITE_URL}/cricket`,
           "sport": "Cricket",
           "description": "Live cricket odds and IPL 2026 betting platform"
@@ -109,7 +109,7 @@ const Cricket = () => {
 
         {/* Features */}
         <section className="mb-6">
-          <h2 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-4">Why Babu88 Cricket?</h2>
+          <h2 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-4">Why Babu8 Cricket?</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {features.map((f, i) => (
               <div key={i} className="bg-card border border-border rounded-lg p-4">
@@ -123,12 +123,12 @@ const Cricket = () => {
 
         {/* SEO Content */}
         <section className="mb-6 bg-card border border-border rounded-lg p-4">
-          <h2 className="font-heading text-lg md:text-xl font-bold text-foreground mb-3">Cricket Betting at Babu88</h2>
+          <h2 className="font-heading text-lg md:text-xl font-bold text-foreground mb-3">Cricket Betting at Babu8</h2>
           <p className="text-sm text-muted-foreground leading-relaxed mb-2">
-            Babu88 is India's premier destination for live cricket odds covering IPL 2026, T20 World Cup, ODI series, and Test matches. Our platform provides real-time ball-by-ball odds with the best rates in the Indian market.
+            Babu8 is India's premier destination for live cricket odds covering IPL 2026, T20 World Cup, ODI series, and Test matches. Our platform provides real-time ball-by-ball odds with the best rates in the Indian market.
           </p>
           <p className="text-xs text-muted-foreground leading-relaxed">
-            From match winner markets to player performance bets, enjoy comprehensive cricket coverage with instant deposits and withdrawals in INR. Join over 1 lakh cricket fans already on Babu88.
+            From match winner markets to player performance bets, enjoy comprehensive cricket coverage with instant deposits and withdrawals in INR. Join over 1 lakh cricket fans already on Babu8.
           </p>
         </section>
 

@@ -11,24 +11,24 @@ const SITE_URL = "https://www.babu8.online";
 
 const faqs = [
   {
-    q: "What is Babu88?",
-    a: "Babu88 is India's #1 online gaming platform offering cricket betting, fantasy cricket, live casino games, Teen Patti, Andar Bahar, slot games, and crash games. We are designed specifically for Indian players with INR support."
+    q: "What is Babu8?",
+    a: "Babu8 is India's #1 online gaming platform offering cricket betting, fantasy cricket, live casino games, Teen Patti, Andar Bahar, slot games, and crash games. We are designed specifically for Indian players with INR support."
   },
   {
-    q: "How do I register on Babu88?",
+    q: "How do I register on Babu8?",
     a: "Registration is quick and easy via WhatsApp. Click the Register button on our website, and our support team will guide you through the sign-up process in minutes. You must be 18+ to create an account."
   },
   {
     q: "What payment methods are supported?",
-    a: "Babu88 supports all major Indian payment methods including UPI (GPay, PhonePe, Paytm), Net Banking, and popular e-wallets. Deposits and withdrawals are processed instantly in Indian Rupees (INR)."
+    a: "Babu8 supports all major Indian payment methods including UPI (GPay, PhonePe, Paytm), Net Banking, and popular e-wallets. Deposits and withdrawals are processed instantly in Indian Rupees (INR)."
   },
   {
-    q: "Is Babu88 safe and secure?",
-    a: "Yes. Babu88 uses industry-standard SSL encryption to protect all transactions and personal data. Our games use certified Random Number Generators (RNG) to ensure fair outcomes for every player."
+    q: "Is Babu8 safe and secure?",
+    a: "Yes. Babu8 uses industry-standard SSL encryption to protect all transactions and personal data. Our games use certified Random Number Generators (RNG) to ensure fair outcomes for every player."
   },
   {
     q: "What cricket events can I follow?",
-    a: "Babu88 covers all major cricket events: IPL 2026, T20 World Cup, ODI World Cup, Asia Cup, bilateral series between India and all major nations, and domestic tournaments. Live in-play odds are available for all matches."
+    a: "Babu8 covers all major cricket events: IPL 2026, T20 World Cup, ODI World Cup, Asia Cup, bilateral series between India and all major nations, and domestic tournaments. Live in-play odds are available for all matches."
   },
   {
     q: "How do crash games work?",
@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: "Are there bonuses and promotions?",
-    a: "Yes! Babu88 offers welcome bonuses, deposit bonuses, free spins for slots, and special promotions during IPL and major cricket tournaments. Contact us on WhatsApp to learn about current offers."
+    a: "Yes! Babu8 offers welcome bonuses, deposit bonuses, free spins for slots, and special promotions during IPL and major cricket tournaments. Contact us on WhatsApp to learn about current offers."
   },
   {
     q: "How do I withdraw my winnings?",
@@ -48,7 +48,7 @@ const faqs = [
   },
   {
     q: "What is the minimum age to play?",
-    a: "You must be 18 years or older to register and play on Babu88. We strictly enforce age verification as part of our responsible gaming commitment."
+    a: "You must be 18 years or older to register and play on Babu8. We strictly enforce age verification as part of our responsible gaming commitment."
   },
 ];
 
@@ -58,11 +58,11 @@ const FAQ = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>FAQ - Frequently Asked Questions | Babu88</title>
-        <meta name="description" content="Find answers to common questions about Babu88: registration, payments, games, withdrawals and responsible gaming on India's #1 gaming platform." />
+        <title>FAQ - Frequently Asked Questions | Babu8</title>
+        <meta name="description" content="Find answers to common questions about Babu8: registration, payments, games, withdrawals and responsible gaming on India's #1 gaming platform." />
         <link rel="canonical" href={`${SITE_URL}/faq`} />
-        <meta property="og:title" content="FAQ - Frequently Asked Questions | Babu88" />
-        <meta property="og:description" content="Common questions about Babu88 India's gaming platform answered." />
+        <meta property="og:title" content="FAQ - Frequently Asked Questions | Babu8" />
+        <meta property="og:description" content="Common questions about Babu8 India's gaming platform answered." />
         <meta property="og:url" content={`${SITE_URL}/faq`} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify({
@@ -89,7 +89,7 @@ const FAQ = () => {
         </nav>
 
         <h1 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-2">Frequently Asked Questions</h1>
-        <p className="text-sm md:text-base text-muted-foreground mb-6">Everything you need to know about Babu88.</p>
+        <p className="text-sm md:text-base text-muted-foreground mb-6">Everything you need to know about Babu8.</p>
 
         {/* FAQ Accordion */}
         <section className="mb-6 space-y-2" id="faq">

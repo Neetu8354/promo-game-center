@@ -29,10 +29,14 @@ const Header = () => {
             <button onClick={() => setMenuOpen(!menuOpen)} className="text-foreground p-1 md:hidden">
               {menuOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
-            <Link to="/" className="flex items-center">
-              <span className="font-heading font-bold text-xl italic text-foreground">
-                Babu<span className="text-primary">88</span>
-              </span>
+            <Link to="/" className="flex items-center" aria-label="Babu8 home">
+              <img
+                src="/logo-babu8.svg"
+                alt="Babu8 - India's Trusted Cricket Exchange & Online Casino"
+                width="160"
+                height="38"
+                className="h-9 w-auto object-contain"
+              />
             </Link>
           </div>
 

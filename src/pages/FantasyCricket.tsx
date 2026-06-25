@@ -26,11 +26,11 @@ const FantasyCricket = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Fantasy Cricket India - Build Teams & Win Prizes | Babu88</title>
-        <meta name="description" content="Play fantasy cricket on Babu88. Pick players, build your dream team for IPL 2026 matches and win real prizes. Expert tips and strategies included." />
+        <title>Fantasy Cricket India - Build Teams & Win Prizes | Babu8</title>
+        <meta name="description" content="Play fantasy cricket on Babu8. Pick players, build your dream team for IPL 2026 matches and win real prizes. Expert tips and strategies included." />
         <link rel="canonical" href={`${SITE_URL}/fantasy-cricket`} />
-        <meta property="og:title" content="Fantasy Cricket India - Build Teams & Win Prizes | Babu88" />
-        <meta property="og:description" content="Play fantasy cricket on Babu88 and win real prizes. IPL 2026 contests available." />
+        <meta property="og:title" content="Fantasy Cricket India - Build Teams & Win Prizes | Babu8" />
+        <meta property="og:description" content="Play fantasy cricket on Babu8 and win real prizes. IPL 2026 contests available." />
         <meta property="og:url" content={`${SITE_URL}/fantasy-cricket`} />
         <meta property="og:type" content="website" />
       </Helmet>
@@ -119,9 +119,9 @@ const FantasyCricket = () => {
 
         {/* SEO Content */}
         <section className="mb-6 bg-card border border-border rounded-lg p-4">
-          <h2 className="font-heading text-lg md:text-xl font-bold text-foreground mb-3">Fantasy Cricket on Babu88</h2>
+          <h2 className="font-heading text-lg md:text-xl font-bold text-foreground mb-3">Fantasy Cricket on Babu8</h2>
           <p className="text-sm text-muted-foreground leading-relaxed mb-2">
-            Babu88 offers India's most exciting fantasy cricket contests for IPL 2026, T20 World Cup, and all major bilateral series. Create your fantasy team of 11 real cricket players and earn points based on their actual match performances.
+            Babu8 offers India's most exciting fantasy cricket contests for IPL 2026, T20 World Cup, and all major bilateral series. Create your fantasy team of 11 real cricket players and earn points based on their actual match performances.
           </p>
           <p className="text-xs text-muted-foreground leading-relaxed">
             With daily contests, mega leagues, and head-to-head battles, there's something for every fantasy cricket enthusiast. Use our expert tips and player analysis to build winning teams consistently.

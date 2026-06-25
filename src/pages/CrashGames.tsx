@@ -32,11 +32,11 @@ const CrashGames = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Crash Games Online India - Aviator & More | Babu88</title>
-        <meta name="description" content="Play Aviator, JetX and more crash games on Babu88 India. Watch multipliers rise and cash out before the crash. Provably fair with INR support." />
+        <title>Crash Games Online India - Aviator & More | Babu8</title>
+        <meta name="description" content="Play Aviator, JetX and more crash games on Babu8 India. Watch multipliers rise and cash out before the crash. Provably fair with INR support." />
         <link rel="canonical" href={`${SITE_URL}/crash-games`} />
-        <meta property="og:title" content="Crash Games Online India - Aviator & More | Babu88" />
-        <meta property="og:description" content="Play Aviator and crash games on Babu88. Rising multipliers, provably fair, INR deposits." />
+        <meta property="og:title" content="Crash Games Online India - Aviator & More | Babu8" />
+        <meta property="og:description" content="Play Aviator and crash games on Babu8. Rising multipliers, provably fair, INR deposits." />
         <meta property="og:url" content={`${SITE_URL}/crash-games`} />
         <meta property="og:type" content="website" />
       </Helmet>
@@ -151,9 +151,9 @@ const CrashGames = () => {
 
         {/* SEO Content */}
         <section className="mb-6 bg-card border border-border rounded-lg p-4">
-          <h2 className="font-heading text-lg md:text-xl font-bold text-foreground mb-3">Crash Games on Babu88</h2>
+          <h2 className="font-heading text-lg md:text-xl font-bold text-foreground mb-3">Crash Games on Babu8</h2>
           <p className="text-sm text-muted-foreground leading-relaxed mb-2">
-            Crash games are the fastest-growing game category in India. Babu88 offers top crash games including Aviator and JetX with provably fair technology ensuring every outcome is completely transparent and verifiable.
+            Crash games are the fastest-growing game category in India. Babu8 offers top crash games including Aviator and JetX with provably fair technology ensuring every outcome is completely transparent and verifiable.
           </p>
           <p className="text-xs text-muted-foreground leading-relaxed">
             Watch multipliers rise in real time, chat with other players, and cash out at your target — all from your mobile. INR deposits and instant withdrawals supported. 18+ only. Play responsibly.

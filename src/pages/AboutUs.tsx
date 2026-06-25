@@ -26,17 +26,17 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>About Babu88 - India's #1 Cricket & Casino Gaming Platform</title>
-        <meta name="description" content="Learn about Babu88, India's leading gaming platform. Our mission, values, and commitment to safe, fair gaming for cricket and casino enthusiasts across India." />
+        <title>About Babu8 - India's #1 Cricket & Casino Gaming Platform</title>
+        <meta name="description" content="Learn about Babu8, India's leading gaming platform. Our mission, values, and commitment to safe, fair gaming for cricket and casino enthusiasts across India." />
         <link rel="canonical" href={`${SITE_URL}/about-us`} />
-        <meta property="og:title" content="About Babu88 - India's #1 Cricket & Casino Gaming Platform" />
-        <meta property="og:description" content="Babu88 is India's most trusted gaming platform for cricket, casino, slots and more." />
+        <meta property="og:title" content="About Babu8 - India's #1 Cricket & Casino Gaming Platform" />
+        <meta property="og:description" content="Babu8 is India's most trusted gaming platform for cricket, casino, slots and more." />
         <meta property="og:url" content={`${SITE_URL}/about-us`} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
-          "name": "Babu88",
+          "name": "Babu8",
           "url": SITE_URL,
           "description": "India's premier gaming platform for cricket, casino, slots and entertainment",
           "foundingDate": "2024",
@@ -63,7 +63,7 @@ const AboutUs = () => {
 
         {/* Hero */}
         <div className="rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 p-5 mb-6 text-center">
-          <h1 className="font-heading text-2xl font-bold text-foreground mb-2">About Babu88</h1>
+          <h1 className="font-heading text-2xl font-bold text-foreground mb-2">About Babu8</h1>
           <p className="text-sm text-muted-foreground">India's #1 Cricket & Casino Gaming Platform since 2024</p>
         </div>
 
@@ -83,7 +83,7 @@ const AboutUs = () => {
         <section className="mb-6 bg-card border border-border rounded-lg p-4">
           <h2 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-3">Our Mission</h2>
           <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-            Babu88 was founded with a simple mission: to give every Indian cricket fan and gaming enthusiast a world-class platform that's safe, fair, and built for India. From live IPL odds to Teen Patti and crash games — we bring the full gaming universe to your smartphone.
+            Babu8 was founded with a simple mission: to give every Indian cricket fan and gaming enthusiast a world-class platform that's safe, fair, and built for India. From live IPL odds to Teen Patti and crash games — we bring the full gaming universe to your smartphone.
           </p>
         </section>
 
@@ -103,9 +103,9 @@ const AboutUs = () => {
           </div>
         </section>
 
-        {/* Why Babu88 */}
+        {/* Why Babu8 */}
         <section className="mb-6 bg-card border border-border rounded-lg p-4">
-          <h2 className="font-heading text-lg md:text-xl font-bold text-foreground mb-3">Why Indian Players Choose Babu88</h2>
+          <h2 className="font-heading text-lg md:text-xl font-bold text-foreground mb-3">Why Indian Players Choose Babu8</h2>
           <ul className="space-y-2">
             {[
               "Fully INR-based deposits and instant withdrawals via UPI",

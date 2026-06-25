@@ -13,22 +13,22 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Babu88 Blog - Cricket Tips, Casino Guides & Gaming Strategies</title>
-        <meta name="description" content="Read expert articles on cricket analysis, fantasy cricket tips, casino game strategies, and responsible gaming guides on the Babu88 blog." />
+        <title>Babu8 Blog - Cricket Tips, Casino Guides & Gaming Strategies</title>
+        <meta name="description" content="Read expert articles on cricket analysis, fantasy cricket tips, casino game strategies, and responsible gaming guides on the Babu8 blog." />
         <link rel="canonical" href="https://www.babu8.online/blog" />
-        <meta property="og:title" content="Babu88 Blog - Cricket Tips, Casino Guides & Gaming Strategies" />
+        <meta property="og:title" content="Babu8 Blog - Cricket Tips, Casino Guides & Gaming Strategies" />
         <meta property="og:description" content="Read expert articles on cricket analysis, fantasy cricket tips, casino game strategies, and responsible gaming guides." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.babu8.online/blog" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Blog",
-          "name": "Babu88 Blog",
+          "name": "Babu8 Blog",
           "description": "Expert articles on cricket, casino games, and gaming strategies",
           "url": "https://www.babu8.online/blog",
           "publisher": {
             "@type": "Organization",
-            "name": "Babu88",
+            "name": "Babu8",
             "url": "https://www.babu8.online"
           },
           "blogPost": blogPosts.map(p => ({
@@ -54,7 +54,7 @@ const Blog = () => {
           </ol>
         </nav>
 
-        <h1 className="font-heading text-2xl font-bold text-foreground mb-4">Babu88 Blog</h1>
+        <h1 className="font-heading text-2xl font-bold text-foreground mb-4">Babu8 Blog</h1>
         <p className="text-sm text-muted-foreground mb-6">Expert tips, strategies & guides for cricket and casino gaming in India.</p>
 
         {/* Featured Post */}

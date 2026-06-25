@@ -28,11 +28,11 @@ const LiveCard = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Live Card Games Online India - Poker, Rummy, Teen Patti | Babu88</title>
-        <meta name="description" content="Play live card games on Babu88 India. Real dealers for Teen Patti, Andar Bahar, Poker, Rummy and Blackjack. 24/7 live tables with INR support." />
+        <title>Live Card Games Online India - Poker, Rummy, Teen Patti | Babu8</title>
+        <meta name="description" content="Play live card games on Babu8 India. Real dealers for Teen Patti, Andar Bahar, Poker, Rummy and Blackjack. 24/7 live tables with INR support." />
         <link rel="canonical" href={`${SITE_URL}/live-card`} />
-        <meta property="og:title" content="Live Card Games Online India - Poker, Rummy, Teen Patti | Babu88" />
-        <meta property="og:description" content="Real live dealers for Teen Patti, Poker, Rummy and more on Babu88. INR deposits, 24/7 available." />
+        <meta property="og:title" content="Live Card Games Online India - Poker, Rummy, Teen Patti | Babu8" />
+        <meta property="og:description" content="Real live dealers for Teen Patti, Poker, Rummy and more on Babu8. INR deposits, 24/7 available." />
         <meta property="og:url" content={`${SITE_URL}/live-card`} />
         <meta property="og:type" content="website" />
       </Helmet>
@@ -108,9 +108,9 @@ const LiveCard = () => {
 
         {/* SEO Content */}
         <section className="mb-6 bg-card border border-border rounded-lg p-4">
-          <h2 className="font-heading text-lg md:text-xl font-bold text-foreground mb-3">Live Card Games on Babu88</h2>
+          <h2 className="font-heading text-lg md:text-xl font-bold text-foreground mb-3">Live Card Games on Babu8</h2>
           <p className="text-sm text-muted-foreground leading-relaxed mb-2">
-            Experience the thrill of real casino card games from your smartphone. Babu88's live card game lobby features professional dealers, multiple camera angles, and interactive chat — bringing the authentic casino atmosphere straight to you.
+            Experience the thrill of real casino card games from your smartphone. Babu8's live card game lobby features professional dealers, multiple camera angles, and interactive chat — bringing the authentic casino atmosphere straight to you.
           </p>
           <p className="text-xs text-muted-foreground leading-relaxed">
             Choose from dedicated Indian card game tables or international favorites. All live games support INR bets with instant payouts and are available 24 hours a day, 7 days a week.

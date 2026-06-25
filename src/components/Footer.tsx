@@ -50,15 +50,15 @@ const Footer = () => {
 
         {/* SEO Content Block */}
         <div className="border-t border-border pt-5 mb-5">
-          <h2 className="font-heading font-bold text-sm text-foreground mb-3">About Babu88 - India's Gaming Platform</h2>
+          <h2 className="font-heading font-bold text-sm text-foreground mb-3">About Babu8 - India's Gaming Platform</h2>
           <p className="text-xs text-muted-foreground leading-relaxed mb-2">
-            Babu88 is India's leading online gaming and entertainment platform, offering an extensive range of games including fantasy cricket, live casino games, Teen Patti, Andar Bahar, slot games, and crash games. Our platform features live cricket odds for IPL 2026 and all major cricket tournaments with real-time match analysis and predictions.
+            Babu8 is India's leading online gaming and entertainment platform, offering an extensive range of games including fantasy cricket, live casino games, Teen Patti, Andar Bahar, slot games, and crash games. Our platform features live cricket odds for IPL 2026 and all major cricket tournaments with real-time match analysis and predictions.
           </p>
           <p className="text-xs text-muted-foreground leading-relaxed mb-2">
-            Whether you're a cricket enthusiast looking for live match odds and fantasy cricket contests, or a casino gaming fan seeking Teen Patti, Roulette, and Blackjack, Babu88 has everything you need. Our platform supports Indian Rupees (INR) and provides 24/7 WhatsApp customer support.
+            Whether you're a cricket enthusiast looking for live match odds and fantasy cricket contests, or a casino gaming fan seeking Teen Patti, Roulette, and Blackjack, Babu8 has everything you need. Our platform supports Indian Rupees (INR) and provides 24/7 WhatsApp customer support.
           </p>
           <p className="text-xs text-muted-foreground leading-relaxed">
-            Join thousands of Indian players on Babu88 for the ultimate gaming experience. Play responsibly — you must be 18+ to use this platform.
+            Join thousands of Indian players on Babu8 for the ultimate gaming experience. Play responsibly — you must be 18+ to use this platform.
           </p>
         </div>
 
@@ -67,10 +67,10 @@ const Footer = () => {
             Babu<span className="text-primary">88</span>
           </p>
           <p className="text-xs text-muted-foreground max-w-sm mx-auto">
-            Babu88 is a gaming and entertainment platform. You must be 18+ to use this platform. Play responsibly.
+            Babu8 is a gaming and entertainment platform. You must be 18+ to use this platform. Play responsibly.
           </p>
           <p className="text-xs text-muted-foreground mt-1.5">
-            © 2026 Babu88. All rights reserved.
+            © 2026 Babu8. All rights reserved.
           </p>
         </div>
       </div>
