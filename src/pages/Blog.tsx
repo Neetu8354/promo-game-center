@@ -7,8 +7,6 @@ import { blogPosts } from "@/data/blogPosts";
 import { CalendarDays, Clock, ChevronRight } from "lucide-react";
 
 const Blog = () => {
-  const featured = blogPosts[0];
-  const rest = blogPosts.slice(1);
 
   return (
     <div className="min-h-screen bg-background">
@@ -44,7 +42,7 @@ const Blog = () => {
 
       <Header />
 
-      <main className="px-3 py-4 pb-20">
+      <main className="px-4 md:px-8 py-6 pb-24 md:pb-10 max-w-6xl mx-auto">
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="mb-4">
           <ol className="flex items-center gap-1.5 text-xs text-muted-foreground">
@@ -54,58 +52,51 @@ const Blog = () => {
           </ol>
         </nav>
 
-        <h1 className="font-heading text-2xl font-bold text-foreground mb-4">Babu8 Blog</h1>
-        <p className="text-sm text-muted-foreground mb-6">Expert tips, strategies & guides for cricket and casino gaming in India.</p>
-
-        {/* Featured Post */}
-        <Link to={`/blog/${featured.slug}`} className="block mb-6 group">
-          <div className="rounded-lg overflow-hidden border border-border hover:border-primary/50 transition-all">
-            <div className="aspect-video overflow-hidden">
-              <img
-                src={featured.image}
-                alt={featured.title}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                loading="eager"
-                width={800}
-                height={450}
-              />
-            </div>
-            <div className="p-3 bg-card">
-              <span className="text-[10px] font-bold text-primary uppercase">{featured.category}</span>
-              <h2 className="font-heading text-lg font-bold text-foreground mt-1 leading-tight group-hover:text-primary transition-colors">
-                {featured.title}
-              </h2>
-              <p className="text-xs text-muted-foreground mt-1.5 line-clamp-2">{featured.excerpt}</p>
-              <div className="flex items-center gap-3 mt-2 text-[10px] text-muted-foreground">
-                <span className="flex items-center gap-1"><CalendarDays size={10} /> {new Date(featured.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
-                <span className="flex items-center gap-1"><Clock size={10} /> {featured.readTime}</span>
-              </div>
-            </div>
-          </div>
-        </Link>
+        <h1 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-2">Babu8 Blog</h1>
+        <p className="text-sm text-muted-foreground mb-8">Expert tips, strategies &amp; guides for cricket and casino gaming in India.</p>
 
         {/* Post Grid */}
-        <div className="grid grid-cols-1 gap-4">
-          {rest.map((post) => (
-            <Link key={post.slug} to={`/blog/${post.slug}`} className="group flex gap-3 bg-card rounded-lg border border-border hover:border-primary/50 transition-all overflow-hidden">
-              <div className="w-28 shrink-0 overflow-hidden">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {blogPosts.map((post, i) => (
+            <Link
+              key={post.slug}
+              to={`/blog/${post.slug}`}
+              className="group bg-card border border-border rounded-xl overflow-hidden hover:border-primary/50 hover:shadow-lg transition-all flex flex-col"
+            >
+              <div className="aspect-video overflow-hidden">
                 <img
                   src={post.image}
                   alt={post.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                  width={200}
-                  height={200}
+                  loading={i === 0 ? "eager" : "lazy"}
+                  width={600}
+                  height={338}
                 />
               </div>
-              <div className="py-2.5 pr-3 flex-1 min-w-0">
-                <span className="text-[9px] font-bold text-primary uppercase">{post.category}</span>
-                <h3 className="font-heading text-sm font-bold text-foreground leading-tight mt-0.5 group-hover:text-primary transition-colors line-clamp-2">
+              <div className="p-4 flex flex-col flex-1">
+                <span className="text-[10px] font-bold text-primary uppercase bg-primary/10 px-2 py-0.5 rounded w-fit mb-2">
+                  {post.category}
+                </span>
+                <h2 className="font-heading text-sm md:text-base font-bold text-foreground leading-tight group-hover:text-primary transition-colors line-clamp-2 mb-2">
                   {post.title}
-                </h3>
-                <div className="flex items-center gap-2 mt-1.5 text-[9px] text-muted-foreground">
-                  <span className="flex items-center gap-0.5"><CalendarDays size={9} /> {new Date(post.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'short' })}</span>
-                  <span className="flex items-center gap-0.5"><Clock size={9} /> {post.readTime}</span>
+                </h2>
+                <p className="text-xs text-muted-foreground leading-relaxed line-clamp-3 flex-1 mb-3">
+                  {post.excerpt}
+                </p>
+                <div className="flex items-center justify-between mt-auto pt-3 border-t border-border">
+                  <div className="flex items-center gap-3 text-[10px] text-muted-foreground">
+                    <span className="flex items-center gap-1">
+                      <CalendarDays size={10} />
+                      {new Date(post.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <Clock size={10} />
+                      {post.readTime}
+                    </span>
+                  </div>
+                  <span className="text-[10px] font-bold text-primary flex items-center gap-0.5">
+                    Read <ChevronRight size={10} />
+                  </span>
                 </div>
               </div>
             </Link>
