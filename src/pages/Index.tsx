@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-import CategoryTabs from "@/components/CategoryTabs";
 import HeroBanner from "@/components/HeroBanner";
 import CricketOdds from "@/components/CricketOdds";
 import GamesGrid from "@/components/GamesGrid";
@@ -16,7 +15,6 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <SEOHead />
       <Header />
-      <CategoryTabs />
       <HeroBanner />
       <CricketOdds />
       <GamesGrid />
